@@ -1,0 +1,29 @@
+<!-- importação do bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+<div class="container mt-5">
+  <div class="row">
+    <div class="card">
+      <div class="card-body">
+        <h4>Alunos</h4>
+        <!-- Define uma tabela -->
+        <table class="table table-striped">
+          <!-- define o cabeçalho da tabela -->
+          <thead>
+            <th>Nome</th>
+            <th>RU:</th>
+            <th>Nome do Curso</th>
+          </thead>
+          <tbody>
+            <!-- Percorre o array de alunos e mostra em cada linha conforme solicitado -->
+            <tr *ngFor="let aluno of alunos">
+              <td>{{ aluno.nome}}</td>
+              <td>{{ aluno.ru}}</td>
+              <td>{{ aluno.curso}}</td>
+              <td>{{ aluno.dt_aniversario}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
